@@ -12,25 +12,32 @@ public class Main {
     * anonymous inner class that class used once that good idea
     * */
     public static void print(){
+
+
+
         new Object(){
             public void show(){
-                System.out.println("from anonymous class ... h3");
+                System.out.print("%dhello Bastaweetee \n");
             }
         }.show();
+
+
+
+
     }
 
     /*
     * local inner class
     * */
     public static void print1(){
-        class Local_inner{
-            public void printt(){
-                System.out.println("im from local inner class");
+        class LocalInner{
+            public void show(){
+                System.out.print("Hello from local inner ");
             }
         }
 
-        Local_inner local_inner = new Local_inner();
-        local_inner.printt();
+        new LocalInner().show();
+
 
 
     }
